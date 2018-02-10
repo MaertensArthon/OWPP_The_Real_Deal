@@ -1,7 +1,6 @@
 @font-face {
     font-family: "Pirate Keg";
     src: url("../fonts/Piratekeg.ttf");
-    
 }
 
 body{
@@ -10,36 +9,51 @@ body{
     background-size: auto;
 }
 
-header{
+body>*{
     width: 100%;
-    display: inline-block;
-    margin: auto;
 }
 
-header h1{
-     display: inline;
+header{
+    display: inline-block;
+    margin: auto;
+    height: 30vh;
 }
 
 header img {
-     width: 50px;
-     height: 50px;
+    width: 7.75%;
+    position: absolute;
+}
+
+header h1{
+    font-family: Pirate Keg;
+    color: #FFC000;
+    font-size: 5rem;
+    display: inline-block;
+    height: inherit;
+    position: relative;
+    bottom: 2rem;
+}
+
+header h1:nth-of-type(2){
+    left: 12.75%;
+}
+
+header .title{
+    width: 62%;
+    margin: auto;
 }
 
 .navMenu {
-    background-image: url("../images/bg/button.png");
-    width: 50px;
-    height: 50px;
-    display: inline-block;
+    background-image: url(../images/bg/button.png);
+    width: 75px;
+    height: 75px;
+    float: left;
     cursor: pointer;
     border-style: solid;
     border-color: #FFC000;
     border-width: 3px;
-    margin: auto;
-}
-
-.title{
-    font-family: Pirate Keg;
-    color: #FFC000
+    position: relative;
+    top: 2rem
 }
 
 .bar1, .bar2, .bar3 {
